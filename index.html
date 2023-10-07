@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Belajar Javascript</title>
+    <p>Nama : Ahmad Zainuri Hadyanto/p></p>
+    <p>Kelas : D - Morning</p>
+    <p>Selamat mencoba hasil tugas saya dengan pencet tombol dibawah ini!</p>
+    <script>
+      alert("Selamat datang di Tugas Javascript");
+
+      function identitas() {
+        const nama = prompt("Masukan nama anda: ");
+        console.log("Nama        : " + nama);
+        const kelas = prompt("Masukan Kelas: ");
+        console.log("Kelas       : " + kelas);
+        const sesi = prompt("Masukan Sesi: ");
+        console.log("Kelas       : " + sesi);
+        const WA = prompt("Masukan Nomer WA: ");
+        console.log("No WA       : " + WA);
+        console.log(
+          "====================================================\nProgram Infinite Learning\n===================================================="
+        );
+        const pilihprogram = ["1. Web Development", "2. Mobile Development"];
+        let i = 0;
+        let a = "";
+        while (pilihprogram[i]) {
+          console.log(pilihprogram[i]);
+          i++;
+        }
+        const pilih = prompt(
+          "1. Web\n2. Mobile\nMasukan program yang anda pilih: "
+        );
+        if (pilih == 1) {
+          console.log("Program      : Web");
+        } else if (pilih == 2) {
+          console.log("Program      : Mobile");
+        } else {
+          console.log("Program anda tidak ada");
+        }
+        console.log(
+          "====================================================\nCita-Cita\n===================================================="
+        );
+        const pilihan = [
+          "1.TNI/Polri",
+          "2. Guru",
+          "3.Pengusaha",
+          "4.Programer",
+          "5. Presiden",
+          "6. Lainnya",
+        ];
+
+        let text = "";
+        for (let x of pilihan) {
+          text += x + " ";
+          console.log(x);
+        }
+        const cita = prompt(
+          "1. TNI/Polri\n2. Guru\n3. Pengusaha\n4. Programer\n5. Presiden\n6. Lainnya\nPilih cita-cita yang anda: "
+        );
+        switch (cita) {
+          case "1":
+            console.log("Cita - cita        : TNI/Polri");
+            break;
+          case "2":
+            console.log("Cita - cita        : Guru");
+            break;
+          case "3":
+            console.log("Cita - cita        : Pengusaha");
+            break;
+          case "4":
+            console.log("Cita - cita        : Programer");
+            break;
+          case "5":
+            console.log("Cita - cita        : Prediden");
+            break;
+          case "6":
+            const Lainnya = prompt("Masukan cita-cita anda: ");
+            console.log("Cita - cita        : " + Lainnya);
+            break;
+          default:
+            console.log("tidak ada pilihan ini");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="identitas()">Klik untuk memasukan identitas anda!</button>
+  </body>
+</html>
